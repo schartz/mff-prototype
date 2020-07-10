@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prototype demo for Micro Front Ends in Vue and React</title>
+	<style>
+		#main-container{
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 10px;
+			grid-auto-rows: minmax(100px, auto);
+		}
+
+		.grid-child{
+			grid-auto-columns: minmax(10px, auto);
+			grid-row: 1;
+			box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+			border-radius: .5rem;
+		}
+	</style>
+</head>
+<body>
+	<div id="main-container">
+		<div id="react" class="grid-child"></div>
+		<div id="vue" class="grid-child"></div>
+	</div>
+	    <script src="/dist/single-spa.config.js"></script>
+
+</body>
+</html>
